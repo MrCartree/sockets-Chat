@@ -38,7 +38,10 @@
 
         #messages {
             list-style-type: none;
+            height: 410px;
+            overflow: auto;
             margin: 0;
+            padding-bottom: 50px;
             padding: 0;
         }
 
@@ -49,12 +52,19 @@
         #messages li:nth-child(odd) {
             background: #eee;
         }
+
+        #Snake-Game {
+            display: block;
+            margin: 0 auto;
+        }
+
+
     </style>
 </head>
 
 <body>
 
-    <iframe src="https://mrcartree.github.io/ez-snake-game/" frameborder="0" width="400" height="400"></iframe>
+    <iframe id="Snake-Game" src="https://mrcartree.github.io/ez-snake-game/" frameborder="0" width="400" height="500"></iframe>
 
 
     <ul id="messages"></ul>

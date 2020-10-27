@@ -8,9 +8,6 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/games", function(req, res) {
-    res.sendFile(__dirname + "/game.html")
-});
 
 io.on("connection", function(socket) {
     console.log("Conected");
